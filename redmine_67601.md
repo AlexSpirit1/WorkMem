@@ -24,3 +24,6 @@ type: project
 
 **Why:** Потрібно покрити тестами після двох послідовних фіксів (19.03 і 03.04)
 **How to apply:** Тест-план затверджено. Наступний крок — написати автотести для `test-webhook` ендпоінту.
+
+**Тестування 2026-04-06:**
+Тестував вручну через RabbitMQ — публікував `crm.deal.payment.complete` івенти в чергу `Events_Crm_Deal_Payment_stage` з різними `contactId`, `dealId`, `userId`, `pipelineId`, email. UI та автотести не використовувались.
